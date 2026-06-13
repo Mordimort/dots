@@ -1,0 +1,140 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+      "separator": "",
+    "key": {
+      "width": 13
+    },
+    "size": {
+      "binaryPrefix": "jedec"
+    },
+    "constants": [
+            "═══════════════════════════════════════════",
+            "║\u001b[59C║\u001b[59D",
+	    "═════════════════════════════════════════"
+        ]
+  },
+
+  "logo": {
+    //"type": "kitty-direct",
+    "source": "~/.config/fastfetch/miyo2.png",
+    "width": 24,
+    "height": 11,
+    "padding": {
+        "top": 3,
+        "left": 0
+    }
+  },
+  "modules": ["\n\n",
+    {
+            "format": "{#38;2;198;221;175}{#1}╔  {user-name}@{host-name} {$1}╗",
+            "type": "title",
+	    "keyColor": "38;2;198;221;175"
+    },
+    {
+      "type": "os",
+      "key": "{$2}{icon} os",
+      "keyColor": "38;2;198;221;175",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "kernel",
+      "key": "{$2}{icon} ker",
+      "keyColor": "38;2;198;221;175"
+    },
+    {
+      "type": "packages",
+      "key": "{$2}{icon} pkgs",
+      "keyColor": "38;2;198;221;175"
+    },
+    {
+      "type": "terminal",
+      "key": "{$2}{icon} term",
+      "format": "{pretty-name} {version}",
+      "keyColor": "38;2;198;221;175"
+    },
+    {
+      "type": "shell",
+      "key": "{$2}{icon} sh",
+      "keyColor": "38;2;198;221;175",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "de",
+      "key": "{$2}{icon} de",
+      "keyColor": "38;2;198;221;175",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "monitor",
+      "key": "{$2}{icon} disp",
+      "keyColor": "38;2;198;221;175",
+      "format": "{name} [{width}x{height} ({refresh-rate}Hz)]"
+    },
+
+    {
+      "type": "wm",
+      "key": "{$2}{icon} wm",
+      "keyColor": "38;2;198;221;175",
+      "format": "{pretty-name} {version} ({protocol-name})"
+    },
+    {
+      "type": "uptime",
+      "key": "{$2}{icon} up",
+      "keyColor": "38;2;198;221;175"
+    },     
+    {
+      "type": "cpu",
+      "key": "{$2}{icon} cpu",
+      "keyColor": "38;2;198;221;175",
+      "format": "{name} @ {freq-base}"
+    },
+    {
+      "type": "gpu",
+      "key": "{$2}{icon} gpu",
+      "keyColor": "38;2;198;221;175",
+      "format": "{name} ({type})"
+    },
+    {
+      "type": "memory",
+      "key": "{$2}{icon} ram",
+      "keyColor": "38;2;198;221;175",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "swap",
+      "key": "{$2}{icon} swap",
+      "keyColor": "38;2;198;221;175",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "disk",
+      "key": "{$2}{icon} disk1 ",
+      "keyColor": "38;2;198;221;175",
+      "folders": [
+	  "/"
+      ],
+      "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+    {
+      "type": "disk",
+      "key": "{$2}{icon} disk2 ",
+      "keyColor": "38;2;198;221;175",
+      "folders": [
+	  "/run/media/system/Data"
+      ],
+      "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+    {
+      "format": "{#38;2;198;221;175}╚{$3} fastfetch {version} ╝",
+      "text": "{icon} {version}",
+      "type": "version",
+      "key":" ",
+      "keyColor": "38;2;198;221;175"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[33m󰮯 \u001b[32m󰊠 \u001b[34m󰊠 \u001b[31m󰊠 \u001b[36m󰊠 \u001b[35m󰊠 \u001b[37m󰊠 \u001b[97m󰊠"
+    }
+  ]
+}
