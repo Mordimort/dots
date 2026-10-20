@@ -76,7 +76,7 @@
       "type": "wm",
       "key": "{$2}{icon} wm",
       "keyColor": "38;2;198;221;175",
-      "format": "{pretty-name} {version} ({protocol-name})"
+      "format": "{pretty-name} ({protocol-name})"
     },
     {
       "type": "uptime",
@@ -121,7 +121,7 @@
       "key": "{$2}{icon} disk2 ",
       "keyColor": "38;2;198;221;175",
       "folders": [
-	  "/run/media/system/Data"
+	  "/mnt/Data"
       ],
       "format": "{size-used} / {size-total} ({size-percentage})"
     },
