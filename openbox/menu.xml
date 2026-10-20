@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-accessories-menu" label="Accessories">
+  <item label="Calculator">
+    <action name="Execute">
+      <command>kcalc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+    <item label="Ark File Archiver">
+    <action name="Execute">
+      <command>ark</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-editors-menu" label="Editors">
+  <item label="neovim">
+    <action name="Execute">
+      <command>kitty nvim</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>nvim</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Mousepad">
+    <action name="Execute">
+      <command>mousepad</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Kate">
+    <action name="Execute">
+      <command>kate</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Kwrite">
+    <action name="Execute">
+      <command>kwrite</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">  
+  <item label="Kitty">
+    <action name="Execute">
+      <command>kitty</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Xfce Terminal">
+    <action name="Execute">
+      <command>xfce4-terminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Konsole">
+    <action name="Execute">
+      <command>konsole</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Zen Browser">
+    <action name="Execute">
+      <command>zen-browser</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>zen</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Helium Browser">
+    <action name="Execute">
+      <command>helium-browser</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>OHelium</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  </menu>
+
+<menu id="apps-office-menu" label="Office">
+  <item label="LibreOffice Base">
+    <action name="Execute">
+      <command>loffice -base</command>
+    </action>
+  </item>
+  <item label="LibreOffice Calc">
+    <action name="Execute">
+      <command>loffice -calc</command>
+    </action>
+  </item>
+  <item label="LibreOffice Draw">
+    <action name="Execute">
+      <command>loffice -draw</command>
+    </action>
+  </item>
+  <item label="LibreOffice Impress">
+    <action name="Execute">
+      <command>loffice -impress</command>
+    </action>
+  </item>
+  <item label="LibreOffice Math">
+    <action name="Execute">
+      <command>loffice -math</command>
+    </action>
+  </item>
+  <item label="LibreOffice Writer">
+    <action name="Execute">
+      <command>loffice -writer</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+  <item label="Haruna">
+    <action name="Execute">
+      <command>haruna</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+</item>
+<item label="OBS Studio">
+    <action name="Execute">
+      <command>obs</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item> 
+</menu>
+
+<menu id="apps-fileman-menu" label="File Managers">
+    <item label="Thunar">
+    <action name="Execute">
+      <command>Thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Dolphin">
+    <action name="Execute">
+      <command>dolphin</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  </menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+    <item label="Gwenview">
+    <action name="Execute">
+      <command>gwenview</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+    <item label="Krita">
+    <action name="Execute">
+      <command>krita</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf-qt</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+    <item label="LXAppearance">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>  
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="apps-accessories-menu"/>
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <menu id="apps-term-menu"/>
+  <menu id="apps-fileman-menu"/>
+  <separator label="System" />
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
